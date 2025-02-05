@@ -1,33 +1,31 @@
-## Escalonador Round Robin Python ##
+# Round Robin Scheduler
 
-Projeto desenvolvido para a disciplina de Sistemas Operacionais do ano de 2024
+## Needed libs to run the scheduler
 
-Desenvolvido por:
+- Numpy: Used to generate random colors in the Gantt's chart, also needed to show the timestamp in the y axis of the chart
 
-Flavio Eugenio de Oliveira Neto 22.221.027-0
-Giovanna Borges Tamagnini 22.221.016-3
-Gabryel Lourenço Maciel de Morais 22.221.021-3
-Thiago Ayres Kimura RA 22.221.045-2
+- Matplotlib: Used to generate the values and animations on real time in Gantt's chart
 
-## Bibliotecas necessárias, para correto funcionamento do simulador:
+## How to install the libs
 
-- Numpy : Usado para gerar cores aleatórias no gráfico de Gantt, e para exibir todos os tempos no eixo
-          y do gráfico
+To install, just run the follow command in terminal:
 
-- Matplotlib : Usado para gerar o gráfico de Gantt, assim como suas animações para o gráfico em tempo
-	       real
+"pip install numpy, matplotlib"
 
-Para instalar ambas, basta executar o seguinte comando no terminal: pip install numpy, matplotlib
-Caso não tenha o gerenciador de pacotes pip, digite o seguinte comando no terminal: python -m ensurepip --default-pip
+If you don't have the pip package manager installed, run this command:
 
-## Execução do projeto
+"python -m ensurepip --default-pip"
 
-Para executar, pode ser feito o uso do terminal ou de alguma IDE, como Visual Studio Code.
+## How to run the scheduler
 
-Para executar no terminal:
+There is a file called "arquivo_teste.txt" inside it there are 4 columns, first one is the name of the process, second one is the duration of the process in the CPU, the third column is the time of arrival of the process in the CPU, and the last one is reserved for I/O operation time, which could be separated with commas.
 
-- Acesse o caminho do projeto pelo terminal, e execute o comando: python main.py
+This file have some example values but you can change it with your values to test the scheduler.
 
-Para executar no Visual Studio Code:
+To run the code, you can use a terminal or some IDE, like VSCode.
 
-- Abra a pasta na IDE, selecione o arquivo main.py, e aperte ctrl+f5
+To run in terminal:
+
+cd "FOLDER PATH"
+
+"python main.py"
