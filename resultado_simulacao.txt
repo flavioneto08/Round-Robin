@@ -1,0 +1,130 @@
+***********************************
+***** ESCALONADOR ROUND ROBIN *****
+-----------------------------------
+------- INICIANDO SIMULAÇÃO -------
+-----------------------------------
+************* TEMPO 0 ************
+#[evento] CHEGADA <P3>
+CPU: P3(5)
+FILA: Não há processos na fila
+************* TEMPO 1 ************
+#[evento] CHEGADA <P4>
+CPU: P3(4)
+FILA: P4(7)
+************* TEMPO 2 ************
+#[evento] OPERACAO I/O <P3>
+CPU: P4(7)
+FILA: P3(3)
+************* TEMPO 3 ************
+CPU: P4(6)
+FILA: P3(3)
+************* TEMPO 4 ************
+#[evento] CHEGADA <P2>
+CPU: P4(5)
+FILA: P3(3) P2(10)
+************* TEMPO 5 ************
+#[evento] OPERACAO I/O <P4>
+CPU: P3(3)
+FILA: P2(10) P4(4)
+************* TEMPO 6 ************
+CPU: P3(2)
+FILA: P2(10) P4(4)
+************* TEMPO 7 ************
+CPU: P3(1)
+FILA: P2(10) P4(4)
+************* TEMPO 8 ************
+#[evento] ENCERRADO <P3>
+CPU: P2(10)
+FILA: P4(4)
+************* TEMPO 9 ************
+CPU: P2(9)
+FILA: P4(4)
+************* TEMPO 10 ************
+#[evento] CHEGADA <P1>
+CPU: P2(8)
+FILA: P4(4) P1(9)
+************* TEMPO 11 ************
+CPU: P2(7)
+FILA: P4(4) P1(9)
+************* TEMPO 12 ************
+#[evento] FIM QUANTUM <P2>
+CPU: P4(4)
+FILA: P1(9) P2(6)
+************* TEMPO 13 ************
+CPU: P4(3)
+FILA: P1(9) P2(6)
+************* TEMPO 14 ************
+CPU: P4(2)
+FILA: P1(9) P2(6)
+************* TEMPO 15 ************
+#[evento] OPERACAO I/O <P4>
+CPU: P1(9)
+FILA: P2(6) P4(1)
+************* TEMPO 16 ************
+CPU: P1(8)
+FILA: P2(6) P4(1)
+************* TEMPO 17 ************
+#[evento] CHEGADA <P5>
+#[evento] OPERACAO I/O <P1>
+CPU: P2(6)
+FILA: P4(1) P1(7) P5(2)
+************* TEMPO 18 ************
+#[evento] OPERACAO I/O <P2>
+CPU: P4(1)
+FILA: P1(7) P5(2) P2(5)
+************* TEMPO 19 ************
+#[evento] ENCERRADO <P4>
+CPU: P1(7)
+FILA: P5(2) P2(5)
+************* TEMPO 20 ************
+CPU: P1(6)
+FILA: P5(2) P2(5)
+************* TEMPO 21 ************
+#[evento] OPERACAO I/O <P1>
+CPU: P5(2)
+FILA: P2(5) P1(5)
+************* TEMPO 22 ************
+CPU: P5(1)
+FILA: P2(5) P1(5)
+************* TEMPO 23 ************
+#[evento] ENCERRADO <P5>
+CPU: P2(5)
+FILA: P1(5)
+************* TEMPO 24 ************
+CPU: P2(4)
+FILA: P1(5)
+************* TEMPO 25 ************
+CPU: P2(3)
+FILA: P1(5)
+************* TEMPO 26 ************
+CPU: P2(2)
+FILA: P1(5)
+************* TEMPO 27 ************
+#[evento] FIM QUANTUM <P2>
+CPU: P1(5)
+FILA: P2(1)
+************* TEMPO 28 ************
+CPU: P1(4)
+FILA: P2(1)
+************* TEMPO 29 ************
+#[evento] OPERACAO I/O <P1>
+CPU: P2(1)
+FILA: P1(3)
+************* TEMPO 30 ************
+#[evento] ENCERRADO <P2>
+CPU: P1(3)
+FILA: Não há processos na fila
+************* TEMPO 31 ************
+CPU: P1(2)
+FILA: Não há processos na fila
+************* TEMPO 32 ************
+#[evento] OPERACAO I/O <P1>
+CPU: P1(1)
+FILA: Não há processos na fila
+************* TEMPO 33 ************
+#[evento] ENCERRADO <P1>
+FILA: Não há processos na fila
+ACABARAM OS PROCESSOS!
+-----------------------------------
+------- ENCERRANDO SIMULAÇÃO ------
+-----------------------------------
